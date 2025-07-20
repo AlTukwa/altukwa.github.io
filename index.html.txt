@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>محمد التقوى - روابط التواصل</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 40px 20px;
+            color: #222;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .link {
+            display: block;
+            margin: 10px auto;
+            padding: 12px 20px;
+            background-color: #ffffff;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 400px;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .link:hover {
+            background-color: #e2e2e2;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <h1>محمد التقوى</h1>
+    <p>داعية وصانع محتوى ينشر الخير والفائدة</p>
+
+    <a class="link" href="https://www.facebook.com/share/1JUxxkvexM/" target="_blank">فيسبوك</a>
+    <a class="link" href="https://www.instagram.com/altukwa?igsh=NWs3M2QybmlkMzZ6" target="_blank">إنستغرام</a>
+    <a class="link" href="https://x.com/AlTukwa?t=ui8bMWdCxwF-Il_U6tTIBA&s=09" target="_blank">إكس (Twitter سابقًا)</a>
+    <a class="link" href="https://t.me/altuqwa" target="_blank">تليغرام</a>
+    <a class="link" href="https://whatsapp.com/channel/0029Vau6cAtDjiOU7ZjWy3Y" target="_blank">واتساب</a>
+    <a class="link" href="https://youtube.com/@altukwa?si=NV3nVuTEF2bggixY" target="_blank">يوتيوب</a>
+</body>
+</html>
