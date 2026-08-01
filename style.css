@@ -1,39 +1,77 @@
-/* CSS Stylesheet - Modern Islamic Personal Website */
-
-:root {
-    --primary-color: #2b580c;
-    --primary-light: #639a67;
-    --accent-gold: #d4af37;
-    --bg-light: #f9f8f3;
-    --card-bg: #ffffff;
-    --text-color: #2d3748;
-    --text-muted: #718096;
-    --border-color: #e2e8f0;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    --transition: all 0.3s ease;
+/* News Ticker Styling */
+.news-ticker {
+    background: #1c241a;
+    color: #d4af37;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    overflow: hidden;
+    height: 40px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
 
-[data-theme="dark"] {
-    --bg-light: #121811;
-    --card-bg: #1c241a;
-    --text-color: #f7fafc;
-    --text-muted: #a0aec0;
-    --border-color: #2d3748;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+.ticker-title {
+    background: #2b580c;
+    color: #fff;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    white-space: nowrap;
+    z-index: 10;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
 }
 
-html {
-    scroll-behavior: smooth;
+.ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
 }
 
-body {
-    font-family: 'Tajawal', sans-serif;
+.ticker-move:hover {
+    animation-play-state: paused;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 30px;
+    color: #f7fafc;
+}
+
+@keyframes ticker {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+}
+
+/* Custom Social Colors */
+.whatsapp i { color: #25d366; }
+.facebook i { color: #1877f2; }
+.twitter i { color: #1da1f2; }
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
     background-color: var(--bg-light);
     color: var(--text-color);
     line-height: 1.7;
